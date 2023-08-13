@@ -396,7 +396,7 @@ a.btn:nth-child(2)::before {
 .img-about span {
     color: var(--hover-color);
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /* About Section END */
