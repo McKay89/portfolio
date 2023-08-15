@@ -482,6 +482,141 @@ a.btn:nth-child(2)::before {
 
 /* Services Section END */
 
+/* Skill Section START */
+
+.skills {
+    background: var(--second-bg-color);
+}
+
+.skill-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+
+.skill-bar {
+    margin-bottom: 2.3rem;
+}
+
+.skill-main h3 {
+    margin-bottom: 2rem;
+    font-size: var(--normal-font);
+    text-align: center;
+}
+
+.skill-left .skill-bar .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.skill-left .skill-bar .bar {
+    width: 100%;
+    height: 10px;
+    background-color: var(--bg-color);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skill-bar .bar span {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: var(--hover-color);
+    border-radius: 25px;
+    box-shadow: var(--neon-box-shadow);
+}
+
+.skill-bar .bar .html {
+    width: 95%;
+    animation: html 2s;
+}
+
+.skill-bar .bar .css {
+    width: 92%;
+    animation: css 2s;
+}
+
+.skill-bar .bar .javascript {
+    width: 76%;
+    animation: javascript 2s;
+}
+
+.skill-bar .bar .csharp {
+    width: 80%;
+    animation: csharp 2s;
+}
+
+.skill-bar .bar .sql {
+    width: 64%;
+    animation: sql 2s;
+}
+
+.skill-bar .bar .design {
+    width: 82%;
+    animation: design 2s;
+}
+
+.professional {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box {
+    position: relative;
+    margin: 7px 0;
+    flex: 1 1 15rem;
+}
+
+.box .text {
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.box .text big {
+    font: 400;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box .text small {
+    display: block;
+    font-weight: 600;
+}
+
+.circle {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle .points {
+    width: 5px;
+    height: 10px;
+    background-color: var(--bg-color);
+    position: absolute;
+    border-radius: 4px;
+    transform: rotate(calc(var(--i) * var(--rot))) translateY(-45px);
+}
+
+.points.marked {
+    animation: glow 0.04s linear forwards;
+    animation-delay: calc(var(--i) * 0.05s);
+}
+
+/* Skill Section END */
+
 
 /* Keyframes Section START */
 
@@ -498,6 +633,71 @@ a.btn:nth-child(2)::before {
     }
     80% {
         border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+    }
+}
+
+@keyframes html {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 95%
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 92%
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 76%
+    }
+}
+
+@keyframes csharp {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 80%
+    }
+}
+
+@keyframes sql {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 64%
+    }
+}
+
+@keyframes design {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 82%
+    }
+}
+
+@keyframes glow {
+    0% {
+        background: var(--bg-color);
+        box-shadow: none;
+    }
+    100% {
+        background: var(--hover-color);
+        box-shadow: var(--neon-box-shadow);
     }
 }
 
